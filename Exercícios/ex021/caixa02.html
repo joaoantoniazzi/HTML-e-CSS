@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F76159;
+            color: white;
+        }
+        header {
+            background-color: #750D07;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            height: 130px;
+        }
+        h1 {
+            color: white;
+            display: inline-block;
+            margin-left: 20px;
+            text-transform: capitalize;
+        }
+        p {
+            text-align: justify;
+            text-indent: 25px;
+        }
+        nav > p > a {
+            display: inline-block;
+            margin-left: 30px;
+            text-align: center;
+            text-indent: 0%;
+        }
+        nav > p {
+            text-indent: -8px;
+        }
+        footer {
+            background-color: #C2150C;
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 10px;
+        }
+        main {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            height: auto;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            color:white;
+            text-decoration: none;
+        }
+        a:hover {
+            font-weight: bold;
+            text-decoration:underline;
+            font-size: 1.075em;
+        }
+        article > aside > p {
+            text-align: right;
+            font-weight: bold;
+        }
+        img {
+            display: block;
+            height: 200px;
+            margin: 10px auto 8px auto;
+        }
+        .dev {
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: #E6342F;
+        }
+        #nome {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <p>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </p>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi quo qui. Nesciunt molestiae ad perspiciatis maxime doloremque libero provident cumque, nam asperiores dignissimos est quam autem deleniti repudiandae amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eaque eius sapiente ea, ipsa, praesentium a ipsam, fugit voluptas illum error quis velit tenetur vitae ex neque nostrum tempore voluptate?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quos totam eos ea fuga mollitia modi veritatis quasi quisquam eligendi accusamus, quidem quod enim quam rem reprehenderit beatae minus ratione?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam exercitationem voluptates iste unde molestiae praesentium, iure, maiores quam rerum adipisci facere consequatur ea quisquam? Placeat nobis velit repellendus temporibus tempora.</p>
+                <abbr title="Garrafa Tupperware"><img src="https://thumbs.dreamstime.com/b/garrafa-de-%C3%A1gua-azul-com-isolada-em-fundo-branco-pl%C3%A1stico-193124355.jpg" alt="Imagem de Garrafa da Tupperware"></abbr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur illum quia iure cumque quam omnis cupiditate qui quis ex voluptatibus autem expedita vel suscipit, in, sed consequatur hic assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus non excepturi, illo numquam harum ea voluptatem? Voluptate, dignissimos autem accusantium praesentium esse iusto impedit, nobis distinctio perferendis optio aliquam mollitia.</p>
+            </article>
+            <article>
+                <aside>
+                    <p id="autor">Artigo escrito por José de Magalhães</p>
+                </aside>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p class="dev">Desenvolvido por <span id="nome">João Henrique Antoniazzi</span></p>
+    </footer>
+</body>
+</html>

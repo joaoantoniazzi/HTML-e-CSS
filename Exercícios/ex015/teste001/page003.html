@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade de Nêutrons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/favicon-atom.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Número de Nêutrons em um Átomo</h1>
+    <p id="instru"><br>Insira as informações necessárias e depois clique em "Verificar resultado":</p>
+    <p><strong>Número de Massa</strong> (Z / p<sup>+</sup>): <input type="number" id="massa1"></p>
+    <p><strong>Número atômico</strong> / Número de <strong>Prótons</strong> (Z / p<sup>+</sup>): <input type="number" id="protons1"></p>
+    <p><input type="button" value="Ver o resultado" onclick="verificar()" id="result"></p>
+    <div id="resultado1"><br></div>
+    <p><br><a href="index.html" target="_self" rel="prev">Voltar para a página inicial</a></p>
+    <script>
+        function verificar() {
+            var protonstxt = document.querySelector('input#protons1')
+            var protons = Number(protonstxt.value)
+            var massatxt = document.querySelector('input#massa1')
+            var massa = Number(massatxt.value)
+            var resultado = document.querySelector('div#resultado1')
+            var neutrons = massa - protons
+            resultado.innerHTML = `<p><br>O número de <strong>Nêutrons</strong> (n<sup>0</sup>) desse átomo é <strong>${neutrons}</strong>.</p>`
+        }
+    </script>
+</body>
+</html>

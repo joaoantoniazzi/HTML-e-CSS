@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bold;
+            font-size: 1.025em;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .especial::before {
+            content: '⇒ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: orangered;
+        }
+
+        .especial::after {
+            content: ' ⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: orangered;
+        }
+
+        .especial {
+            background-color: rgb(255, 195, 173);
+        }
+
+        #p1 {
+            text-align: left;
+        }
+
+        #p2 {
+            text-align: right;
+        }
+
+        #p3 {
+            text-align: center;
+        }
+
+        #p4 {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizano Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" rel="external" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do Curso em Vídeo</a></li>
+    </ul>
+    <h1>Alinhamento (Exercício)</h1>
+    <p id="p1">Este texto está alinhado com a esquerda.</p>
+    <p id="p2">Este está com a direita.</p>
+    <p id="p3">Este está centralizado.</p>
+    <p id="p4">Já este está justificado. Para que você entenda que o texto está alinhado tanto com a direita quanto com a esquerda, vou ter que escrever um texto um pouco maior. Então aí vou eu, escrevendo coisas aleatórias só para preencer algumas linhas de um parágrafo e você entender que isso é um texto justificado. Nossa, como é difícil. Nunca imaginei que seria uma tarefa tão árdua escrever um texto sem sentido só para um exercício, mas acho que assim já está bom, então, adeus!</p>
+</body>
+</html>

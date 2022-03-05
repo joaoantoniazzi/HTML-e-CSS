@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutro, Cátion ou Ânion</title>
+    <link rel="shortcut icon" href="favicon/favicon-atom.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Neutro, Cátion ou Ânion?</h1>
+    <p id="instru"><br>Insira os dados necessários nos espaços abaixo e depois clique em "Ver o resultado" para descobrir a carga do átomo:</p>
+    <p>Número de <strong>Prótons</strong> (p<sup>+</sup> / Z): <input type="number" id="protons1"></p>
+    <p>Número de <strong>Elétrons</strong> (e<sup>-</sup>): <input type="number" id="eletrons1"></p>
+    <p><input type="button" value="Ver o resultado" onclick="verificar()" id="result"></p>
+    <div id="resultado1"><br></div>
+    <p><br><a href="index.html" target="_self" rel="prev">Voltar para a página inicial</a></p>
+    <script>
+        function verificar() {
+            var protonstxt = document.querySelector('input#protons1')
+            var protons = Number(protonstxt.value)
+            var eletronstxt = document.querySelector('input#eletrons1')
+            var eletrons = Number(eletronstxt.value)
+            var resultado = document.querySelector('div#resultado1')
+            if (protons == eletrons) {
+                resultado.innerHTML = `<p><br>Esse átomo é eletricamente <strong>neutro</strong>.</p>`
+            } else if (eletrons > protons) {
+                resultado.innerHTML = `<p><br>Esse átomo é um <strong>Ânion</strong>. Ele é elétricamente <strong>negativo</strong>.</p>`
+            } else if (protons > eletrons) {
+                resultado.innerHTML = `<p><br>Esse átomo é um <strong>Cátion</strong>. Ele é elétricamente <strong>positivo</strong>.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
