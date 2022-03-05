@@ -3,4 +3,4 @@
 
 Estou aprendendo a criar sites usando HTML e CSS.
 
-<a href="exercicios/ex001/index.hrml">Acesse o Exercício 001</a>
+<a href="exercicios/ex001/index.html">Acesse o Exercício 001</a>
