@@ -45,11 +45,11 @@ Veja os Exercícios do curso:
 
 <a href="exercicios/ex017/fontes.html">Acesse o Exercício 017</a> 
 
-<a href="exercicios/ex018/fonte01.html.html">Acesse o Exercício 018 - fonte01</a> 
+<a href="exercicios/ex018/fonte01.html">Acesse o Exercício 018 - fonte01</a> 
 
-<a href="exercicios/ex018/fonte02.html.html">Acesse o Exercício 018 - fonte02</a> 
+<a href="exercicios/ex018/fonte02.html">Acesse o Exercício 018 - fonte02</a> 
 
-<a href="exercicios/ex018/fonte03.html.html">Acesse o Exercício 018 - fonte03</a> 
+<a href="exercicios/ex018/fonte03.html">Acesse o Exercício 018 - fonte03</a> 
 
 <a href="exercicios/ex019/seletores01.html">Acesse o Exercício 019</a> 
 
